@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "loyalty-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8106"
+paths:
+  "/loyaltys":
+    get:
+      summary: "List loyaltys"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create loyalty"
+      responses:
+        "200":
+          description: OK
+  "/loyaltys/{id}":
+    get:
+      summary: "Get loyalty by ID"
+      responses:
+        "200":
+          description: OK
